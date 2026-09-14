@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: tradingagents-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /health
+    disk:
+      name: tradingagents-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DATABASE_PATH
+        value: /var/data/tradingagents.sqlite3
+      - key: CORS_ORIGINS
+        sync: false
+      - key: CORS_ORIGIN_REGEX
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false

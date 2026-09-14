@@ -98,6 +98,50 @@ Stop the stack with:
 docker compose down
 ```
 
+## Deploy to Vercel and Render
+
+The frontend and API deploy as separate services. Vercel hosts the Next.js app;
+Render runs the persistent FastAPI worker and its SQLite database. This keeps LLM
+provider credentials on the server and lets the browser connect to the API over
+HTTPS and WSS.
+
+### 1. Deploy the API on Render
+
+This repository includes a Render Blueprint in `render.yaml`. It builds
+`backend/Dockerfile`, initializes the public `tradingagents-core` submodule, and
+attaches a persistent disk at `/var/data` for the SQLite database.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2FTheBlueAstronomer%2FTradingAgents-UI)
+
+During the Blueprint setup, provide these values:
+
+- `CORS_ORIGINS`: the exact production Vercel origin, such as `https://your-app.vercel.app`.
+- `CORS_ORIGIN_REGEX`: optional regex for Vercel preview origins, such as `https://your-app(?:-[a-z0-9-]+)?\\.vercel\\.app`.
+- `OPENAI_API_KEY`: or add the key for the provider selected in the UI.
+
+After the API is live, note its public URL, for example
+`https://tradingagents-api.onrender.com`. The persistent-disk configuration is
+intended for one backend instance; do not scale it horizontally while it uses
+SQLite.
+
+### 2. Deploy the frontend on Vercel
+
+1. In Vercel, import `TheBlueAstronomer/TradingAgents-UI`.
+2. Set **Root Directory** to `frontend` and keep the detected **Next.js** framework.
+3. Add the following production and preview environment variables. They are
+   browser-visible URLs, so never put API keys in them.
+
+   ```dotenv
+   NEXT_PUBLIC_API_URL=https://tradingagents-api.onrender.com
+   NEXT_PUBLIC_WS_URL=wss://tradingagents-api.onrender.com
+   ```
+
+4. Deploy, then update `CORS_ORIGINS` on Render with the Vercel production URL.
+
+Use a Vercel custom domain in `CORS_ORIGINS` once you have one. The optional
+`CORS_ORIGIN_REGEX` is only for Vercel preview URLs and should be kept as narrow
+as possible.
+
 ## Verify the installation
 
 With the virtual environment active, run the automated checks from the repository root:

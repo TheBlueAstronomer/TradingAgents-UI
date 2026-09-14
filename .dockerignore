@@ -6,6 +6,7 @@
 .claude-flow
 .codex
 .env
+.venv
 data
 frontend
 **/__pycache__
