@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-14T10:41:08Z",
+  "title": "Design System: TradingAgents Research Office",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#e9ecec",
+        "tonalRamp": ["color-mix(in oklch, #e9ecec 25%, black)", "color-mix(in oklch, #e9ecec 45%, black)", "color-mix(in oklch, #e9ecec 65%, black)", "color-mix(in oklch, #e9ecec 85%, black)", "#e9ecec", "color-mix(in oklch, #e9ecec 80%, white)", "color-mix(in oklch, #e9ecec 55%, white)", "color-mix(in oklch, #e9ecec 20%, white)"]
+      },
+      "paper-deep": {
+        "role": "neutral",
+        "displayName": "Deep Paper",
+        "canonical": "#dce1e0",
+        "tonalRamp": ["color-mix(in oklch, #dce1e0 25%, black)", "color-mix(in oklch, #dce1e0 45%, black)", "color-mix(in oklch, #dce1e0 65%, black)", "color-mix(in oklch, #dce1e0 85%, black)", "#dce1e0", "color-mix(in oklch, #dce1e0 80%, white)", "color-mix(in oklch, #dce1e0 55%, white)", "color-mix(in oklch, #dce1e0 20%, white)"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Charcoal Ink",
+        "canonical": "#1d252b",
+        "tonalRamp": ["color-mix(in oklch, #1d252b 25%, black)", "color-mix(in oklch, #1d252b 45%, black)", "color-mix(in oklch, #1d252b 65%, black)", "color-mix(in oklch, #1d252b 85%, black)", "#1d252b", "color-mix(in oklch, #1d252b 80%, white)", "color-mix(in oklch, #1d252b 55%, white)", "color-mix(in oklch, #1d252b 20%, white)"]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#53605e",
+        "tonalRamp": ["color-mix(in oklch, #53605e 25%, black)", "color-mix(in oklch, #53605e 45%, black)", "color-mix(in oklch, #53605e 65%, black)", "color-mix(in oklch, #53605e 85%, black)", "#53605e", "color-mix(in oklch, #53605e 80%, white)", "color-mix(in oklch, #53605e 55%, white)", "color-mix(in oklch, #53605e 20%, white)"]
+      },
+      "moss": {
+        "role": "primary",
+        "displayName": "Institutional Moss",
+        "canonical": "#3f6257",
+        "tonalRamp": ["color-mix(in oklch, #3f6257 25%, black)", "color-mix(in oklch, #3f6257 45%, black)", "color-mix(in oklch, #3f6257 65%, black)", "color-mix(in oklch, #3f6257 85%, black)", "#3f6257", "color-mix(in oklch, #3f6257 80%, white)", "color-mix(in oklch, #3f6257 55%, white)", "color-mix(in oklch, #3f6257 20%, white)"]
+      },
+      "moss-hover": {
+        "role": "primary",
+        "displayName": "Deep Moss",
+        "canonical": "#29473f",
+        "tonalRamp": ["color-mix(in oklch, #29473f 25%, black)", "color-mix(in oklch, #29473f 45%, black)", "color-mix(in oklch, #29473f 65%, black)", "color-mix(in oklch, #29473f 85%, black)", "#29473f", "color-mix(in oklch, #29473f 80%, white)", "color-mix(in oklch, #29473f 55%, white)", "color-mix(in oklch, #29473f 20%, white)"]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Docket Amber",
+        "canonical": "#a96e18",
+        "tonalRamp": ["color-mix(in oklch, #a96e18 25%, black)", "color-mix(in oklch, #a96e18 45%, black)", "color-mix(in oklch, #a96e18 65%, black)", "color-mix(in oklch, #a96e18 85%, black)", "#a96e18", "color-mix(in oklch, #a96e18 80%, white)", "color-mix(in oklch, #a96e18 55%, white)", "color-mix(in oklch, #a96e18 20%, white)"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rule Line",
+        "canonical": "#aeb8b5",
+        "tonalRamp": ["color-mix(in oklch, #aeb8b5 25%, black)", "color-mix(in oklch, #aeb8b5 45%, black)", "color-mix(in oklch, #aeb8b5 65%, black)", "color-mix(in oklch, #aeb8b5 85%, black)", "#aeb8b5", "color-mix(in oklch, #aeb8b5 80%, white)", "color-mix(in oklch, #aeb8b5 55%, white)", "color-mix(in oklch, #aeb8b5 20%, white)"]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "canonical": "#83918d",
+        "tonalRamp": ["color-mix(in oklch, #83918d 25%, black)", "color-mix(in oklch, #83918d 45%, black)", "color-mix(in oklch, #83918d 65%, black)", "color-mix(in oklch, #83918d 85%, black)", "#83918d", "color-mix(in oklch, #83918d 80%, white)", "color-mix(in oklch, #83918d 55%, white)", "color-mix(in oklch, #83918d 20%, white)"]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Failure Red",
+        "canonical": "#982d2d",
+        "tonalRamp": ["color-mix(in oklch, #982d2d 25%, black)", "color-mix(in oklch, #982d2d 45%, black)", "color-mix(in oklch, #982d2d 65%, black)", "color-mix(in oklch, #982d2d 85%, black)", "#982d2d", "color-mix(in oklch, #982d2d 80%, white)", "color-mix(in oklch, #982d2d 55%, white)", "color-mix(in oklch, #982d2d 20%, white)"]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus Ochre",
+        "canonical": "#75500d",
+        "tonalRamp": ["color-mix(in oklch, #75500d 25%, black)", "color-mix(in oklch, #75500d 45%, black)", "color-mix(in oklch, #75500d 65%, black)", "color-mix(in oklch, #75500d 85%, black)", "#75500d", "color-mix(in oklch, #75500d 80%, white)", "color-mix(in oklch, #75500d 55%, white)", "color-mix(in oklch, #75500d 20%, white)"]
+      },
+      "open-folio": {
+        "role": "neutral",
+        "displayName": "Open Folio",
+        "canonical": "#f7f8f7",
+        "tonalRamp": ["color-mix(in oklch, #f7f8f7 25%, black)", "color-mix(in oklch, #f7f8f7 45%, black)", "color-mix(in oklch, #f7f8f7 65%, black)", "color-mix(in oklch, #f7f8f7 85%, black)", "#f7f8f7", "color-mix(in oklch, #f7f8f7 80%, white)", "color-mix(in oklch, #f7f8f7 55%, white)", "color-mix(in oklch, #f7f8f7 20%, white)"]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Stock",
+        "canonical": "#f8faf9",
+        "tonalRamp": ["color-mix(in oklch, #f8faf9 25%, black)", "color-mix(in oklch, #f8faf9 45%, black)", "color-mix(in oklch, #f8faf9 65%, black)", "color-mix(in oklch, #f8faf9 85%, black)", "#f8faf9", "color-mix(in oklch, #f8faf9 80%, white)", "color-mix(in oklch, #f8faf9 55%, white)", "color-mix(in oklch, #f8faf9 20%, white)"]
+      },
+      "filed-tab": {
+        "role": "neutral",
+        "displayName": "Filed Tab",
+        "canonical": "#e1e7e4",
+        "tonalRamp": ["color-mix(in oklch, #e1e7e4 25%, black)", "color-mix(in oklch, #e1e7e4 45%, black)", "color-mix(in oklch, #e1e7e4 65%, black)", "color-mix(in oklch, #e1e7e4 85%, black)", "#e1e7e4", "color-mix(in oklch, #e1e7e4 80%, white)", "color-mix(in oklch, #e1e7e4 55%, white)", "color-mix(in oklch, #e1e7e4 20%, white)"]
+      },
+      "skeleton": {
+        "role": "neutral",
+        "displayName": "Skeleton Grey",
+        "canonical": "#cbd3d0",
+        "tonalRamp": ["color-mix(in oklch, #cbd3d0 25%, black)", "color-mix(in oklch, #cbd3d0 45%, black)", "color-mix(in oklch, #cbd3d0 65%, black)", "color-mix(in oklch, #cbd3d0 85%, black)", "#cbd3d0", "color-mix(in oklch, #cbd3d0 80%, white)", "color-mix(in oklch, #cbd3d0 55%, white)", "color-mix(in oklch, #cbd3d0 20%, white)"]
+      },
+      "error-ink": {
+        "role": "tertiary",
+        "displayName": "Error Ink",
+        "canonical": "#721d1d",
+        "tonalRamp": ["color-mix(in oklch, #721d1d 25%, black)", "color-mix(in oklch, #721d1d 45%, black)", "color-mix(in oklch, #721d1d 65%, black)", "color-mix(in oklch, #721d1d 85%, black)", "#721d1d", "color-mix(in oklch, #721d1d 80%, white)", "color-mix(in oklch, #721d1d 55%, white)", "color-mix(in oklch, #721d1d 20%, white)"]
+      },
+      "error-paper": {
+        "role": "tertiary",
+        "displayName": "Error Paper",
+        "canonical": "#f5dfda",
+        "tonalRamp": ["color-mix(in oklch, #f5dfda 25%, black)", "color-mix(in oklch, #f5dfda 45%, black)", "color-mix(in oklch, #f5dfda 65%, black)", "color-mix(in oklch, #f5dfda 85%, black)", "#f5dfda", "color-mix(in oklch, #f5dfda 80%, white)", "color-mix(in oklch, #f5dfda 55%, white)", "color-mix(in oklch, #f5dfda 20%, white)"]
+      },
+      "error-line": {
+        "role": "tertiary",
+        "displayName": "Error Line",
+        "canonical": "#c98c83",
+        "tonalRamp": ["color-mix(in oklch, #c98c83 25%, black)", "color-mix(in oklch, #c98c83 45%, black)", "color-mix(in oklch, #c98c83 65%, black)", "color-mix(in oklch, #c98c83 85%, black)", "#c98c83", "color-mix(in oklch, #c98c83 80%, white)", "color-mix(in oklch, #c98c83 55%, white)", "color-mix(in oklch, #c98c83 20%, white)"]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["color-mix(in oklch, #ffffff 25%, black)", "color-mix(in oklch, #ffffff 45%, black)", "color-mix(in oklch, #ffffff 65%, black)", "color-mix(in oklch, #ffffff 85%, black)", "#ffffff", "#ffffff", "#ffffff", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Cover-sheet, analysis-record, and page titles." },
+      "headline": { "displayName": "Headline", "purpose": "Pipeline, evidence-file, and history-band headings." },
+      "body": { "displayName": "Body", "purpose": "Primary interface and report reading copy." },
+      "body-compact": { "displayName": "Compact Body", "purpose": "Introductory and supporting copy." },
+      "label": { "displayName": "Label", "purpose": "Form labels and field legends." },
+      "folio": { "displayName": "Folio", "purpose": "Uppercase document-role kickers." },
+      "status": { "displayName": "Status", "purpose": "Connection, run, and evidence state annotations." }
+    },
+    "shadows": [
+      { "name": "assembly-lift", "value": "0 12px 22px rgba(29, 37, 43, 0.18)", "purpose": "Temporary lift at the start of a newly filed report's settling motion; document surfaces otherwise have no resting shadow." }
+    ],
+    "motion": [
+      { "name": "button-state", "value": "180ms ease", "purpose": "Primary-button background and 1px hover-lift transition." },
+      { "name": "docket-assembly", "value": "180ms cubic-bezier(0.2, 0.9, 0.25, 1)", "purpose": "Settles a newly filed report sheet from -8px and temporary shadow to rest." },
+      { "name": "skeleton-pulse", "value": "1.4s ease infinite", "purpose": "Pulses loading bars to 0.45 opacity at the midpoint." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Collapses all animations and transitions when reduced motion is preferred." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "800px" },
+      { "name": "narrow", "value": "430px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Docket Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The authoritative action for opening or advancing a docket.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Start analysis</button>",
+      "css": ".ds-btn-primary { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 14px; border: 1px solid var(--moss); border-radius: 2px; background: var(--moss); color: #fff; font: 800 0.79rem/1.45 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.02em; cursor: pointer; transition: background 180ms ease, transform 180ms ease; } .ds-btn-primary:hover:not(:disabled) { background: #29473f; transform: translateY(-1px); } .ds-btn-primary:active:not(:disabled) { transform: translateY(0); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; } .ds-btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }"
+    },
+    {
+      "name": "Docket Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "The familiar native text-field treatment used throughout cover sheets and filters.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-ticker\">Ticker</label><input class=\"ds-field\" id=\"ds-ticker\" placeholder=\"AAPL\">",
+      "css": ".ds-field-label { display: block; margin-bottom: 5px; color: var(--ink); font: 750 0.79rem/1.45 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.025em; } .ds-field { width: 100%; min-height: 40px; padding: 7px 9px; border: 1px solid #83918d; border-radius: 2px; background: #f8faf9; color: var(--ink); font: 400 1rem/1.45 ui-sans-serif, system-ui, sans-serif; } .ds-field:hover { border-color: var(--moss); } .ds-field:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; } .ds-field:disabled { opacity: 0.6; cursor: not-allowed; }"
+    },
+    {
+      "name": "Docket Rail Navigation",
+      "kind": "nav",
+      "description": "A ruled, uppercase office index that keeps primary destinations visible.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Docket navigation\"><a class=\"ds-rail-link\" href=\"#\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M12 8v8M8 12h8\"/></svg>New docket</a><a class=\"ds-rail-link\" href=\"#\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 12a9 9 0 1 0 3-6.7L3 8\"/><path d=\"M3 3v5h5M12 7v5l3 2\"/></svg>Index</a></nav>",
+      "css": ".ds-rail { min-height: 57px; display: flex; align-items: center; gap: 18px; border-bottom: 1px solid var(--ink); font: 700 0.82rem/1.45 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.07em; text-transform: uppercase; } .ds-rail-link { min-height: 44px; display: inline-flex; align-items: center; gap: 5px; color: var(--ink); text-decoration: none; } .ds-rail-link:hover { color: var(--moss); } .ds-rail-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }"
+    },
+    {
+      "name": "Completed Status Stamp",
+      "kind": "chip",
+      "refersTo": "status-completed",
+      "description": "An outlined state word that identifies an open or completed record without relying on color alone.",
+      "html": "<span class=\"ds-status-completed\">Completed</span>",
+      "css": ".ds-status-completed { display: inline-flex; padding: 4px 8px; border: 1px solid var(--moss); border-radius: 0; background: #f8faf9; color: var(--moss); font: 800 0.72rem/1.45 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.06em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Hold Signal Badge",
+      "kind": "chip",
+      "description": "A compact, explicitly named trade-signal badge using restrained amber.",
+      "html": "<span class=\"ds-signal-hold\">Hold<span class=\"ds-sr-only\"> signal</span></span>",
+      "css": ".ds-signal-hold { display: inline-block; padding: 2px 6px; border: 1px solid var(--amber); border-radius: 0; color: #77500c; background: transparent; font: 800 0.67rem/1.45 ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.04em; text-transform: uppercase; } .ds-signal-hold:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; } .ds-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }"
+    },
+    {
+      "name": "Cover Sheet",
+      "kind": "card",
+      "description": "The bordered configuration document, visually distinct from open folios and ledgers.",
+      "html": "<section class=\"ds-cover-sheet\"><span class=\"ds-folio\">New research docket</span><h2>Open an analysis</h2><p>Set the instrument and review team.</p></section>",
+      "css": ".ds-cover-sheet { padding: 17px 19px; border: 1px solid var(--line); border-top: 2px solid var(--moss); border-radius: 0; background: rgba(244, 246, 245, 0.78); color: var(--ink); box-shadow: none; font-family: ui-sans-serif, system-ui, sans-serif; } .ds-cover-sheet h2 { margin: 4px 0 5px; font-size: 1.65rem; line-height: 1.1; letter-spacing: -0.025em; } .ds-cover-sheet p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.45; } .ds-folio { color: var(--moss); font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Filed Report Tab",
+      "kind": "custom",
+      "refersTo": "report-tab-active",
+      "description": "The selected evidence index tab with an explicit filed state and completion dot.",
+      "html": "<button class=\"ds-report-tab\" type=\"button\"><span>Market</span><span class=\"ds-tab-state\">Filed</span></button>",
+      "css": ".ds-report-tab { position: relative; min-height: 44px; padding: 8px 9px 7px; border: 0; border-top: 1px solid var(--moss); border-radius: 0; background: #e1e7e4; color: var(--ink); font: 750 0.75rem/1.2 ui-sans-serif, system-ui, sans-serif; cursor: pointer; } .ds-report-tab::after { content: \"\"; display: inline-block; width: 5px; height: 5px; margin-left: 5px; border-radius: 50%; background: var(--moss); } .ds-tab-state { display: block; font-size: 0.59rem; letter-spacing: 0.06em; text-transform: uppercase; } .ds-report-tab:hover { color: var(--moss); } .ds-report-tab:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; } .ds-report-tab:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Docket Assembly Sheet",
+      "kind": "custom",
+      "description": "The signature evidence arrival: a newly filed sheet settles briefly, then remains flat in the folio.",
+      "html": "<article class=\"ds-assembly-sheet\"><h3>Final memorandum</h3><p>The completed evidence record settles into place.</p></article>",
+      "css": ".ds-assembly-sheet { max-width: 75ch; padding: 15px 9px 6px; color: var(--ink); background: #f7f8f7; font: 400 1rem/1.45 ui-sans-serif, system-ui, sans-serif; animation: ds-assemble 180ms cubic-bezier(0.2, 0.9, 0.25, 1); overflow-wrap: anywhere; } .ds-assembly-sheet h3 { margin: 0 0 10px; font-size: 1.05rem; line-height: 1.15; } .ds-assembly-sheet p { margin: 0 0 11px; } .ds-assembly-sheet:focus-within { outline: 3px solid var(--focus); outline-offset: 3px; } @keyframes ds-assemble { from { transform: translateY(-8px); box-shadow: 0 12px 22px rgba(29, 37, 43, 0.18); } to { transform: none; box-shadow: none; } } @media (prefers-reduced-motion: reduce) { .ds-assembly-sheet { animation-duration: 0.01ms; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Research Docket",
+    "overview": "The interface behaves like an institutional research file assembled in public: cool archival stock holds charcoal ink, ruled divisions, graphite annotation, restrained docket amber, and deep moss marks of authority. Density is deliberate and legible rather than dashboard-like; the page shows the chain from configuration through evidence to decision without adopting a trading-terminal aesthetic.\n\nHierarchy comes from differentiated document roles. A bordered cover sheet contains configuration, the open folio gives reports a quieter reading field, and the pipeline and history index behave as ruled ledgers rather than repeated cards. Familiar inputs, buttons, links, tabs, tables, and status labels remain unmistakable inside that language.",
+    "keyCharacteristics": [
+      "Cool archival surfaces with charcoal, moss, and restrained amber.",
+      "Square folios, fine rules, indexed tabs, stamps, and graphite annotations.",
+      "Flat-at-rest hierarchy with one brief assembly lift when evidence arrives.",
+      "Explicit state words, marks, and structure that never rely on color alone.",
+      "Compact institutional typography built from the system sans-serif stack."
+    ],
+    "rules": [
+      { "name": "The Ink-and-Moss Rule", "body": "Charcoal carries information; moss marks action, access, or settled evidence. Amber and red remain semantic exceptions, never ambient decoration.", "section": "colors" },
+      { "name": "The State-Plus-Signal Rule", "body": "Every status color is paired with a word, border, dot, or positional state so completion, waiting, reconnecting, failure, and trade signals remain understandable without color.", "section": "colors" },
+      { "name": "The Indexed Voice Rule", "body": "Uppercase, tracked type is reserved for folios, stamps, navigation, table headers, and state annotations; prose and report content remain sentence case.", "section": "typography" },
+      { "name": "The Flat-at-Rest Rule", "body": "Depth is structural, not decorative: use stock, rules, and document role at rest, and reserve shadow for the brief arrival of new evidence.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do differentiate cover sheets, open folios, and ruled ledgers through stock and border hierarchy rather than repeating one card treatment.",
+      "Do keep status words, marks, and semantic borders visible alongside color.",
+      "Do preserve 44px navigation and report-tab targets on compact screens and the shared 3px offset keyboard focus outline.",
+      "Do keep generated report text readable at no more than 75ch, with safe wrapping and local overflow for GFM tables and code.",
+      "Do use Docket Assembly only when a report newly becomes available, with immediate state change under reduced motion."
+    ],
+    "donts": [
+      "Don't turn the surface-specific four/eight dashboard composition into a global layout mandate.",
+      "Don't add generic floating cards or resting drop shadows to document surfaces.",
+      "Don't spend amber or red as ambient decoration; they carry queued/reconnecting and failure/signal semantics.",
+      "Don't hide standard report tabs behind a bespoke visualization or communicate progress through animation alone.",
+      "Don't invent financial claims, performance decoration, or terminal-like market spectacle inside the research record."
+    ]
+  }
+}

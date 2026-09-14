@@ -1,0 +1,8 @@
+PRAGMA journal_mode = WAL;
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS analysis_runs (id TEXT PRIMARY KEY,ticker TEXT NOT NULL,analysis_date TEXT NOT NULL,asset_type TEXT NOT NULL CHECK(asset_type IN ('stock','crypto')),analysts_json TEXT NOT NULL,llm_provider TEXT NOT NULL,quick_think_llm TEXT NOT NULL,deep_think_llm TEXT NOT NULL,max_debate_rounds INTEGER NOT NULL,max_risk_discuss_rounds INTEGER NOT NULL,backend_url TEXT,config_json TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('queued','running','completed','failed')),signal TEXT CHECK(signal IS NULL OR signal IN ('BUY','OVERWEIGHT','HOLD','UNDERWEIGHT','SELL','REVIEW')),reports_json TEXT NOT NULL DEFAULT '{}',agent_statuses_json TEXT NOT NULL DEFAULT '{}',final_state_json TEXT,error_message TEXT,last_event_seq INTEGER NOT NULL DEFAULT 0,created_at TEXT NOT NULL,started_at TEXT,completed_at TEXT);
+CREATE TABLE IF NOT EXISTS analysis_events (run_id TEXT NOT NULL,seq INTEGER NOT NULL,event_type TEXT NOT NULL,payload_json TEXT NOT NULL,created_at TEXT NOT NULL,PRIMARY KEY(run_id,seq),FOREIGN KEY(run_id) REFERENCES analysis_runs(id) ON DELETE CASCADE);
+CREATE TABLE IF NOT EXISTS checkpoint_cleanups (run_id TEXT PRIMARY KEY,data_cache_dir TEXT NOT NULL,ticker TEXT NOT NULL,trade_date TEXT NOT NULL,signature TEXT NOT NULL,FOREIGN KEY(run_id) REFERENCES analysis_runs(id) ON DELETE CASCADE);
+CREATE INDEX IF NOT EXISTS idx_runs_created_at ON analysis_runs(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_runs_ticker_created_at ON analysis_runs(ticker,created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_runs_status_created_at ON analysis_runs(status,created_at DESC);

@@ -1,0 +1,258 @@
+{
+  "title": "Choose the TradingAgents UI visual world",
+  "question": "Keep the rolled dispatch world, choose the research docket, adopt a challenger, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Block Dispatch",
+      "kicker": "THE ROLL",
+      "lineage": "railway train-graph dispatch sheets and illuminated block panels",
+      "thesis": "Every analysis travels a governed line: evidence enters fixed blocks, handoffs clear, and the final signal leaves with a traceable route.",
+      "palette": ["#E7EAEC", "#12202B", "#2A607C", "#D5662E"],
+      "materials": ["enamel dispatch board", "ruled drafting film", "magnetic route markers"],
+      "viewport": "A four-column control desk launches into an eight-column live dispatch graph, with recent runs docked beneath both above the fold.",
+      "risk": "The railway lineage becomes decoration unless every line and block maps directly to a real agent, handoff, or run state.",
+      "raised": [
+        {
+          "from": "challenger-exposure",
+          "raise": "Disagreement is visible as intersecting Bull and Bear routes instead of a vague research status."
+        },
+        {
+          "from": "challenger-six-pack",
+          "raise": "Running states show direction and progress before warnings appear."
+        },
+        {
+          "from": "challenger-dive",
+          "raise": "Every message stays pinned to its producing stage and time."
+        },
+        {
+          "from": "challenger-quarry",
+          "raise": "Completed reports become persistent occupied blocks instead of evaporating feed items."
+        },
+        {
+          "from": "challenger-calendar",
+          "raise": "The analysis date remains a primary locator on every active and historical run."
+        },
+        {
+          "from": "challenger-atlas",
+          "raise": "Importance and terminal state use scale, labels, and shape rather than colour alone."
+        }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "app rail", "x": 0, "y": 0, "w": 12, "h": 1},
+          {"label": "analysis controls", "x": 0, "y": 1, "w": 4, "h": 6},
+          {"label": "live dispatch graph", "x": 4, "y": 1, "w": 8, "h": 6, "accent": true},
+          {"label": "recent runs", "x": 0, "y": 7, "w": 12, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "label": "Research Docket",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "institutional research folders, indexed exhibits, and signed investment memoranda",
+      "thesis": "Each run is an evidence docket assembled from analyst exhibits into one signed final memorandum.",
+      "palette": ["#E9ECEC", "#1D252B", "#3F6257", "#C8872C"],
+      "materials": ["archival folders", "index tabs", "graphite annotations"],
+      "viewport": "The analysis form reads as a cover sheet beside an open evidence file, with recent dockets indexed along the bottom edge.",
+      "risk": "It is familiar to research users, but its document density can underplay the energy and sequence of live agent work.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "docket index", "x": 0, "y": 0, "w": 12, "h": 1},
+          {"label": "cover sheet", "x": 0, "y": 1, "w": 4, "h": 6, "accent": true},
+          {"label": "evidence file", "x": 4, "y": 1, "w": 8, "h": 6},
+          {"label": "recent dockets", "x": 0, "y": 7, "w": 12, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/impeccable-pick.png"
+    },
+    {
+      "id": "challenger-exposure",
+      "label": "Exposure Sheets",
+      "verdict": "declined",
+      "lineage": "darkroom exposure records on layered tracing sheets",
+      "thesis": "Analyst outputs overlap as weighted evidence sheets, and crossed hatches expose unresolved conflicts.",
+      "palette": ["#F2F0E9", "#111111", "#8B8D8F", "#D8228A"],
+      "materials": ["backlit zone ramp", "tracing overlays", "one-pixel ruling"],
+      "viewport": "Configuration sits on a fixed zone legend while report layers slide across one shared evidence field.",
+      "case": "The conflict grammar is excellent, but darkroom notation identifies less strongly with TradingAgents users and obscures the fixed agent sequence.",
+      "kept": "Make disagreement legible without depending on semantic colour.",
+      "risk": "Dense hatching can compete with form labels and markdown reports.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "zone legend", "x": 0, "y": 0, "w": 3, "h": 10},
+          {"label": "run controls", "x": 3, "y": 0, "w": 4, "h": 4},
+          {"label": "evidence overlays", "x": 7, "y": 0, "w": 5, "h": 7, "accent": true},
+          {"label": "run index", "x": 3, "y": 7, "w": 9, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-1.png",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-exposure-record-zone-sheets-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-b-exposure-record-zone-sheets.webp"
+    },
+    {
+      "id": "challenger-six-pack",
+      "label": "Night Six-Pack",
+      "verdict": "declined",
+      "lineage": "a small aircraft night-instrument six-pack",
+      "thesis": "Six trusted instruments cross-check the run while needles reveal drift before a warning lamp fires.",
+      "palette": ["#080D0F", "#0F1114", "#F2F5F5", "#7CEB89", "#FFB000", "#FF3830"],
+      "materials": ["matte instrument panel", "anti-reflective glass", "engraved placards"],
+      "viewport": "Configuration and recent runs flank a fixed constellation of live agent instruments.",
+      "case": "Instrument trust is strong, but round gauges imply independent metrics rather than a sequential collaborative analysis.",
+      "kept": "Show trend and deviation before escalating to an alarm.",
+      "risk": "The dark cockpit can collapse into the neon terminal cliché the direction round is meant to avoid.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "controls", "x": 0, "y": 0, "w": 3, "h": 7},
+          {"label": "six agent instruments", "x": 3, "y": 0, "w": 7, "h": 7, "accent": true},
+          {"label": "alerts", "x": 10, "y": 0, "w": 2, "h": 7},
+          {"label": "recent runs", "x": 0, "y": 7, "w": 12, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-2.png",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack.webp"
+    },
+    {
+      "id": "challenger-dive",
+      "label": "Mesophotic Descent",
+      "verdict": "declined",
+      "lineage": "a staged technical dive down a volcanic wall",
+      "thesis": "The run descends through evidence layers, marking every observation before turning upward with a decision.",
+      "palette": ["#061B2C", "#0B3652", "#55C7D9", "#EAF3F4"],
+      "materials": ["depth profile", "thermocline band", "marine-snow notation"],
+      "viewport": "A vertical stage axis anchors live messages while configuration and reports open as pinned observations.",
+      "case": "Depth maps progression clearly, but the descent narrative misstates a branching debate-and-handoff graph.",
+      "kept": "Pin each observation to its exact stage and moment.",
+      "risk": "Atmospheric depth can reduce contrast and make standard controls feel foreign.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "depth axis", "x": 0, "y": 0, "w": 2, "h": 10, "accent": true},
+          {"label": "run controls", "x": 2, "y": 0, "w": 4, "h": 5},
+          {"label": "live observations", "x": 6, "y": 0, "w": 6, "h": 7},
+          {"label": "reports", "x": 2, "y": 7, "w": 10, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-3.png",
+      "hero": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive.webp"
+    },
+    {
+      "id": "challenger-quarry",
+      "label": "Cloud Quarry",
+      "verdict": "declined",
+      "lineage": "weather blocks cut and assembled in a cloud quarry",
+      "thesis": "Agents cut transient evidence into durable report blocks before releasing a final signal.",
+      "palette": ["#F5F7F8", "#4AA3D8", "#65717A", "#B7C0C7"],
+      "materials": ["cumulus mass", "sky-cut voids", "silver measurement lines"],
+      "viewport": "A compact control tally faces a construction field where completed reports settle into a run structure.",
+      "case": "Persistent blocks suit report completion, but the surreal quarry is weak audience identification and hides familiar analysis affordances.",
+      "kept": "Completed work should gain visible permanence and weight.",
+      "risk": "The metaphor can become playful spectacle in a serious operating surface.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "tally controls", "x": 0, "y": 0, "w": 4, "h": 6},
+          {"label": "assembled reports", "x": 4, "y": 0, "w": 8, "h": 7, "accent": true},
+          {"label": "run yard", "x": 0, "y": 7, "w": 12, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-4.png",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry.webp"
+    },
+    {
+      "id": "challenger-calendar",
+      "label": "Analysis Almanac",
+      "verdict": "declined",
+      "lineage": "a printing-house wall calendar and tear-off date pad",
+      "thesis": "The selected market date governs the run, and history accumulates as a tactile sequence of dated leaves.",
+      "palette": ["#F1E6D1", "#302A27", "#A33C35", "#B99445"],
+      "materials": ["painted calendar board", "tear-off paper", "fine gold rule"],
+      "viewport": "A large date pad anchors configuration while active evidence and recent dated runs occupy the upper plate.",
+      "case": "Date memory helps history, but it overstates scheduling and understates agents, reports, and the final decision.",
+      "kept": "Keep the analysis date visible as a first-class locator.",
+      "risk": "The vernacular calendar can read nostalgic and ornamental rather than operational.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "active evidence", "x": 0, "y": 0, "w": 8, "h": 6},
+          {"label": "date controls", "x": 8, "y": 0, "w": 4, "h": 6, "accent": true},
+          {"label": "dated history", "x": 0, "y": 6, "w": 12, "h": 4}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-5.png",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-calendar-pinup-pad-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/vernacular-ephemera-calendar-pinup-pad.webp"
+    },
+    {
+      "id": "challenger-atlas",
+      "label": "Decision Atlas",
+      "verdict": "declined",
+      "lineage": "a celestial atlas with ranked magnitudes and indexed plates",
+      "thesis": "Agent observations form a coordinate field whose strongest evidence resolves into one named signal.",
+      "palette": ["#07182D", "#F1F4F5", "#D57A35", "#527AA1"],
+      "materials": ["night chart", "coordinate ruling", "magnitude rings"],
+      "viewport": "A plotted agent field dominates the workspace while controls and recent runs read as its indexed plates.",
+      "case": "Ranked evidence is legible, but the atlas suggests exploratory data visualization rather than a deterministic run pipeline.",
+      "kept": "Encode importance with scale and form as well as colour.",
+      "risk": "Canvas spectacle can displace accessible controls and long-form report reading.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "run controls", "x": 0, "y": 0, "w": 3, "h": 7},
+          {"label": "evidence field", "x": 3, "y": 0, "w": 9, "h": 7, "accent": true},
+          {"label": "indexed runs", "x": 0, "y": 7, "w": 12, "h": 3}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-6.png",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-star-atlas-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/notation-diagram-systems-star-atlas.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A familiar SaaS dashboard for configuring runs, watching status cards, and opening reports.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB", "#E5E7EB"],
+    "materials": ["neutral card grid", "standard data table", "status chips"],
+    "viewport": "A top navigation bar sits above a form card, summary cards, and a recent-runs table.",
+    "risk": "Immediately usable, but intentionally indistinguishable from competing developer dashboards.",
+    "wireframe": {
+      "cols": 12,
+      "rows": 10,
+      "regions": [
+        {"label": "top nav", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "form card", "x": 0, "y": 1, "w": 4, "h": 5, "accent": true},
+        {"label": "summary cards", "x": 4, "y": 1, "w": 8, "h": 3},
+        {"label": "recent table", "x": 4, "y": 4, "w": 8, "h": 4},
+        {"label": "footer", "x": 0, "y": 8, "w": 12, "h": 2}
+      ]
+    },
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

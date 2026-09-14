@@ -1,0 +1,6 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "tsx": true,
+  "aliases": { "components": "@/components", "utils": "@/lib/utils" }
+}
